@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+{% load static %}
+
+{% load i18n %}
+{% load compress static %}
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  {% block head_tags %}
+  {% endblock %}
+  <link rel="icon" type="image/x-icon" href="{% static 'image/fox.ico' %}"  sizes="32x32"/>
+
+  <link href='https://fonts.googleapis.com/earlyaccess/cwtexkai.css' rel='stylesheet' type='text/css'>
+
+  <link href='//fonts.googleapis.com/css?family=Varela+Round:300,400,500,700' rel='stylesheet' type='text/css'>
+
+
+  {% compress css %}
+      <link rel="stylesheet" type="text/x-scss" href="{% static 'css/main.scss' %}">
+  {% endcompress %}
+
+
+  {% block extra_css %}
+  {% endblock %}
+
+  <title>{% block title %}NTU MOOC Management Platform{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.structure.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.min.css">
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.1/masonry.pkgd.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
+</head>
+
+
+<body class="{% block body-class %}{% endblock %}">
+
+    {% include "component/navbar.html" %}
+
+    {% block body %}
+    {% endblock %}
+
+    {% compress js %}
+        <script type="text/javascript" src="{% static 'js/csrf_token.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/datepicker-zh-TW.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
+        {% block scripts %}{% endblock %}
+    {% endcompress %}
+
+    {% block extra_js %}
+
+    {% endblock %}
+<script>
+  {% get_current_language as LANGUAGE_CODE %}
+  {% if LANGUAGE_CODE == 'zh-hant' %}
+    $('.dateinput').datepicker($.datepicker.regional["zh-TW"]);
+  {% else %}
+    $('.dateinput').datepicker($.datepicker.regional[""]);
+  {% endif %}
+</script>
+
+</body>
+</html>

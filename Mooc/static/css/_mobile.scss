@@ -1,0 +1,16 @@
+@media (max-width: 767px) {
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+		border: none;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	    color: $main-white;
+
+	    &:hover{
+	    	color: $main-yellow;
+	    }
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus{
+		background-color: $light-yellow;
+	}
+}
+

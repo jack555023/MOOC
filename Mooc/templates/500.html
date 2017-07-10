@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}500 Internal Server Error | Star Your Life{% endblock %}
+
+{% block body-class %}user{% endblock %}
+
+{% block body %}
+<div class="container">
+  <div class="field-box col-sm-6 col-sm-offset-3">
+    <div class="row text-center">
+      <h2>500 Internal Server Error </h2>
+      <p>Sorry, something went wrong.</p>
+      <a href="{% url 'events:home' %}">{% trans 'Back to Star Your Life' %}</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

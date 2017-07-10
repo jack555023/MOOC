@@ -1,0 +1,53 @@
+.coming-soon{
+	font-size: 60px;
+	color: #f08e57;
+	margin: 50px 0;
+}
+.block-container{
+	margin-top: 30px;
+    margin-bottom: 60px;
+	border-radius: 4px;
+	background-color: $main-white;
+}
+h1{
+    border-left: 10px solid $light-yellow;
+    border-radius: 7px;
+    padding: 16px;
+}
+h3{
+    border-left: 10px solid $main-pink;
+    border-radius: 7px;
+    padding: 16px;
+}
+.form-control{
+	-webkit-box-shadow: none;
+	border-radius: 2px;
+	
+	&:focus{
+		border: 2px solid $main-pink;
+		box-shadow: none;
+	}
+}
+a{
+	color: $main-black;
+
+	&:hover{
+	  text-decoration: none;
+	  color: $main-pink;
+	} 			
+}
+.btn-primary{
+	background-color: $light-yellow;
+	color: $main-black;
+	border: none;
+	border-radius: 2px;
+	
+	&:hover, &:focus, &:active, &:active:focus{
+		background-color: $main-yellow;
+		color: $main-black;
+		outline: none;
+	}
+	&[disabled]:hover{
+		background-color: $main-yellow;
+	}
+}

@@ -1,0 +1,93 @@
+.home{  
+  body{
+      background-color:lightblue;
+  }
+
+  .News{
+  	background-color: $main-gray;
+  	border-radius: 4px;
+  	padding: 50px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+  	.News-dayblock{
+      padding-bottom: 50px;
+      padding-top: 50px;
+      margin-bottom: 15px;
+  		background-color: $main-white;
+  		border-radius: 2px;
+  		text-align: center;
+
+  		.News-dayblock-year, .News-dayblock-day{
+  			font-size: 24px;
+  			color: $main-pink;
+  		}
+  		.News-dayblock-month, .News-dayblock-date{
+  			font-size: 32px;
+  			color: $main-black;
+  			margin: 10px 0;
+  		}
+  	}
+  	.News-newsblock{
+  		.table-border{
+  			border-bottom: 4px solid $main-gray;
+  		}
+  		table{
+  		  background-color: #ffffff;
+        border-radius: 8px;
+        margin-bottom: 5px;
+  		}
+  		thead{
+  			background-color: $main-yellow;
+        color: $main-black;
+  		}
+      th{
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+      }
+      h4{
+        margin-left: 10px;
+      }
+  		.News-link{
+        font-size: 16px;
+        border-right: none;
+        padding: 10px 0 10px 15px;
+
+        &:hover{
+  		    box-shadow: 4px 0px 0px $light-yellow inset;
+        }
+      }
+      .moreBtn{
+        float: right;
+        background-color: $main-black;
+        color: $light-yellow;
+        &:hover{
+          color: $main-pink;
+        }
+      }
+  	}
+  }
+  .EventBlock{
+  	margin-top: 20px;
+    font-family: Microsoft JhengHei;
+    background-color: $main-gray;
+    border-radius:10px;
+    .tab-content{
+      padding: 10px;
+    }
+    .col-sm-4, .col-sm-8{
+      padding: 10px;
+    }
+    .EventBlock-event-box{
+      font-family: Microsoft JhengHei;
+    	padding: 10px;
+    	background-color: #FFFFBB;
+    	border-radius: 10px;
+      
+      h4{
+        padding-top: 10px;
+        font-size: 20px;
+      }
+    }
+  }
+}

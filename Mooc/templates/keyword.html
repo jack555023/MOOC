@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block body-class %}home{% endblock %}
+
+{% block body %}
+
+  
+
+
+<!-- Tab panes -->
+
+
+<div class="EventBlock" style="margin-left: 7.5%; margin-right: 7.5%" >
+  <!-- Popular tabpanel -->
+  <div class="tab-content container  ">
+  <h3 >StopWord清單:</h3>
+  <a class="btn" style="background-color:#FFFFFF" href="{% url 'courses:addkeywords' pk=db_number %}">{% trans '加入關鍵字' %}</a>
+    <div role="tabpanel" class="tab-pane active" id="popular">
+      <div class="row masonry-container">
+        {% for keyword in word_list %}
+        <div class="col-sm-4 EventBlock-event">
+          <div class="EventBlock-event-box">
+              <h4>{{ keyword.stopword }}</h4>
+              <a class="btn" style="background-color:#FFFFFF" href="{% url 'courses:deletekeywords' pk=keyword.id %} ">{% trans '刪除關鍵字' %}</a>
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div><!--End masonry-container  -->
+    </div>
+  </div>
+</div>
+
+
+
+
+    <!-- Recent tabpanel -->
+    
+{% endblock%}

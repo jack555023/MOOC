@@ -1,0 +1,22 @@
+@import "variables";
+// Import Bootstrap for Sass
+@import "vendors/bootstrap";
+
+// Import Each Component Sass
+@import "component/navbar";
+@import "component/tab";
+
+// Import Each Page Sass
+@import "page/home";
+@import "page/event_news";
+@import "page/user";
+
+@import "variables";
+@import "share";
+@import "mobile";
+
+
+body{
+	font-family: 'cwTeXHei', 'Varela Round', sans-serif;
+	background-color:$main-white;
+}

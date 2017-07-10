@@ -1,0 +1,26 @@
+.user{
+	background-color: $main-gray;
+
+	h2{
+		margin-bottom: 20px;
+	}
+	.field-box{
+		margin-top: 30px;
+		padding: 20px;
+		border-radius: 4px;
+		background-color: $main-white;
+		color: $main-black;
+	}
+	.User-btn{
+		padding: 10px 0;
+		margin: 30px 0;
+		font-size: 20px;
+		border: none;
+	}
+	a{
+		color: $main-pink;
+	}
+	h4{
+		color: $main-pink;
+	}
+}

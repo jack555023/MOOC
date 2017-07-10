@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block body-class %}home{% endblock %}
+
+{% block body %}
+
+  
+
+
+<!-- Tab panes -->
+
+
+
+{% if request.session.User %} 
+<div class="EventBlock" style="margin-left: 7.5%; margin-right: 7.5%" > 
+ <div class="tab-content container">
+ <h3>開設課程清單:</h3> 
+      <a class="btn" style="background-color:#FFFFFF" href="{% url 'courses:addcourses' %}">{% trans '開設課程' %}</a>
+    <br>
+    <br>
+    <div role="tabpanel" class="tab-pane active" id="popular">
+      <div class="row masonry-container">
+        {% for course in own_list %}
+        <div class="col-sm-4 EventBlock-event">
+          <div class="EventBlock-event-box">
+              <div class="EventBlock-event-img">      
+              </div>
+              <h4>{{ course.coursename }}</h4>
+            </a>
+          </div>
+          <br>  
+          <a class="btn" style="background-color:#FFFFFF" href="{% url 'courses:keywords' pk=course.relationid %} ">{% trans '編輯關鍵字' %}</a>
+        </div>
+        {% endfor %}
+      </div><!--End masonry-container  -->
+    </div>
+ </div>
+ </div>
+
+{% else %}
+<img class="img-responsive" src="/static/image/mooc.png" alt="">
+      
+{% endif %}
+
+
+
+    <!-- Recent tabpanel -->
+    
+{% endblock%}

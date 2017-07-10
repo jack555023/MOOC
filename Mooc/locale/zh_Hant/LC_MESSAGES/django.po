@@ -1,0 +1,359 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-17 20:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: templates/component/login_alert_modal.html:10
+msgid "Oops!"
+msgstr "登入提醒"
+
+#: templates/component/login_alert_modal.html:13
+msgid "Please Login first."
+msgstr "您目前還沒登入，請先登入喔！"
+
+#: templates/component/login_alert_modal.html:16
+#: templates/component/ticket_confirm_modal.html:17
+#: templates/component/ticket_confirm_modal.html:37
+msgid "Cancel"
+msgstr "取消"
+
+#: templates/component/login_alert_modal.html:17
+#: templates/component/navbar.html:41
+msgid "Login"
+msgstr "登入"
+
+#: templates/component/navbar.html:23
+msgid "Search"
+msgstr "搜尋活動"
+
+#: templates/component/navbar.html:33
+msgid "User Center"
+msgstr "追星專區"
+
+#: templates/component/navbar.html:35
+msgid "Setting"
+msgstr "設定"
+
+#: templates/component/navbar.html:36
+msgid "Logout"
+msgstr "登出"
+
+#: templates/component/navbar.html:44
+msgid "Sign Up"
+msgstr "註冊"
+
+#: templates/component/news_comment.html:11
+#: templates/component/discussion.html:17
+msgid "comment"
+msgstr "留言"
+
+#: templates/component/ticket_confirm_modal.html:11
+#: templates/component/ticket_confirm_modal.html:31
+msgid "Ticket Confirmation"
+msgstr "發佈此票"
+
+#: templates/component/ticket_confirm_modal.html:14
+msgid "Are you sure you want to release this giveout ticket ?"
+msgstr "你確定要送出此讓票資訊嗎？"
+
+#: templates/component/ticket_confirm_modal.html:18
+#: templates/component/ticket_confirm_modal.html:38
+msgid "Confirm"
+msgstr "確認"
+
+#: templates/component/ticket_confirm_modal.html:34
+msgid "Are you sure you want to release this exchange ticket ?"
+msgstr "你確定要送出此換票資訊嗎？"
+
+#: templates/event_detail.html:14
+msgid "Following"
+msgstr "已加入追蹤清單"
+
+#: templates/event_detail.html:17
+msgid "Follow"
+msgstr "加入追蹤清單"
+
+#: templates/event_detail.html:23
+msgid "Add to Calendar"
+msgstr "加入星助理"
+
+msgid "Add to Calendar again"
+msgstr "再次加入星助理"
+
+#: templates/event_detail.html:33
+msgid "Event Info"
+msgstr "活動資訊"
+
+#: templates/event_detail.html:34
+msgid "Comment"
+msgstr "討論區"
+
+#: templates/event_detail.html:35 templates/panel/giveout_ticket.html:6
+msgid "Giveout Ticket"
+msgstr "讓票區"
+
+#: templates/event_detail.html:36 templates/panel/exchange_ticket.html:6
+msgid "Exchange Ticket"
+msgstr "換票區"
+
+#: templates/event_detail.html:47
+msgid "Date："
+msgstr "日期："
+
+#: templates/event_detail.html:48
+msgid "Time："
+msgstr "演出時間："
+
+#: templates/event_detail.html:49
+msgid "Location："
+msgstr "地點："
+
+#: templates/home.html:21 templates/news_list.html:5
+#: templates/news_list.html:12
+msgid "Latest News"
+msgstr "最星消息"
+
+#: templates/home.html:32
+msgid "More News"
+msgstr "更多消息"
+
+#: templates/home.html:40
+msgid "Hot"
+msgstr "熱門"
+
+#: templates/home.html:41
+msgid "Latest"
+msgstr "最新"
+
+#: templates/home.html:43
+msgid "Recommend"
+msgstr "推薦"
+
+#: templates/panel/discussion.html:7
+msgid "Comment Board"
+msgstr "討論區"
+
+#: templates/panel/discussion.html:39 templates/panel/discussion.html:53
+msgid "No comment yet."
+msgstr "目前沒有任何留言"
+
+#: templates/panel/exchange_ticket.html:9 templates/panel/giveout_ticket.html:9
+#: templates/panel/giveout_ticket.html:12
+msgid "Open Exchange Ticket Notification"
+msgstr "開啟新換票通知"
+
+#: templates/panel/exchange_ticket.html:12
+msgid "Exchange Ticket Notification Opened"
+msgstr "新換票通知 已開啟"
+
+msgid "Open Giveout Ticket Notification"
+msgstr "開啟新讓票通知"
+
+msgid "Giveout Ticket Notification Opened"
+msgstr "新讓票通知 已開啟"
+
+#: templates/panel/exchange_ticket.html:19
+#: templates/panel/giveout_ticket.html:19
+msgid "Submit"
+msgstr "發佈"
+
+#: templates/panel/exchange_ticket.html:26 templates/panel/ticket_list.html:53
+msgid "Ticket in hand"
+msgstr "持有票"
+
+#: templates/panel/exchange_ticket.html:27 templates/panel/ticket_list.html:54
+msgid "Ticket you want"
+msgstr "欲換票"
+
+#: templates/panel/giveout_ticket.html:49
+msgid "There's no giveout ticket released yet."
+msgstr "目前沒有任何讓票釋出。"
+
+#: templates/panel/exchange_ticket.html:63
+msgid "There's no exchange ticket released yet."
+msgstr "目前沒有任何換票釋出。"
+
+#: templates/panel/follow_list.html:3 templates/user.html:11
+msgid "Following List"
+msgstr "追星清單"
+
+#: templates/panel/follow_list.html:14
+msgid "No following event."
+msgstr "目前沒有追蹤任何活動"
+
+#: templates/panel/follow_list.html:19
+msgid "Giveout Ticket Notification List"
+msgstr "新讓票通知清單"
+
+#: templates/panel/follow_list.html:30
+msgid "No Givout Ticket Notification opened yet."
+msgstr "目前沒有開啟任何讓票通知"
+
+#: templates/panel/follow_list.html:35
+msgid "Exchange Ticket Notification List"
+msgstr "新換票通知清單"
+
+#: templates/panel/follow_list.html:46
+msgid "No Exchange Ticket Notification opened yet."
+msgstr "目前沒有開啟任何換票通知"
+
+#: templates/panel/ticket_list.html:3 templates/user.html:12
+msgid "Tickets"
+msgstr "票務管理"
+
+#: templates/panel/ticket_list.html:6
+msgid "Your Giveout Ticket"
+msgstr "你的讓票"
+
+#: templates/panel/ticket_list.html:40 templates/panel/ticket_list.html:96
+msgid "You haven't release any ticket yet."
+msgstr "目前沒有釋出任何票"
+
+#: templates/panel/ticket_list.html:48
+msgid "Your Exchange Ticket"
+msgstr "你的換票"
+
+#: templates/registration/login.html:15
+msgid "Log In"
+msgstr "登入"
+
+#: templates/registration/login.html:26
+msgid "New to Star Your Life?"
+msgstr "第一次來星人生？"
+
+#: templates/registration/login.html:27
+msgid "Sign up now"
+msgstr "立即註冊"
+
+#: templates/registration/password_change_done.html:15
+msgid "Edit Password Success !"
+msgstr "修改密碼成功！"
+
+#: templates/registration/password_change_form.html:15
+msgid "Edit Password"
+msgstr "修改密碼"
+
+#: templates/registration/sign_up.html:15
+msgid "Sign Up Now !"
+msgstr "立即註冊！"
+
+#: templates/registration/sign_up.html:25
+msgid "Already have an account?"
+msgstr "已經有帳號了嗎？"
+
+#: templates/registration/sign_up.html:26
+msgid "Log in"
+msgstr "登入"
+
+#: templates/search_list.html:5
+msgid "Event Search Result"
+msgstr "活動搜尋結果"
+
+#: templates/search_list.html:12
+msgid "Search Result: "
+msgstr "搜尋結果：共 "
+
+#: templates/search_list.html:12
+msgid " events"
+msgstr " 筆"
+
+#: templates/ticket/edit_exchange_ticket.html:7
+#: templates/ticket/edit_exchange_ticket.html:15
+msgid "Edit Exchange Ticket"
+msgstr "修改換票資訊"
+
+#: templates/ticket/edit_giveout_ticket.html:5
+#: templates/ticket/edit_giveout_ticket.html:13
+msgid "Edit Giveout Ticket"
+msgstr "修改讓票資訊"
+
+#: templates/user.html:13 templates/user.html:33
+msgid "Calendar"
+msgstr "星助理"
+
+
+msgid "date"
+msgstr "日期"
+
+msgid "area"
+msgstr "區域"
+
+msgid "row"
+msgstr "排數"
+
+msgid "price"
+msgstr "價格"
+
+msgid "Date"
+msgstr "日期"
+
+msgid "Area"
+msgstr "區域"
+
+msgid "Row"
+msgstr "排數"
+
+msgid "Price"
+msgstr "價格"
+
+msgid "Contact"
+msgstr "私訊"
+
+msgid "Owner"
+msgstr "持票人"
+
+msgid "Event"
+msgstr "活動"
+
+msgid "Edit"
+msgstr "修改"
+
+msgid "Delete"
+msgstr "刪除"
+
+msgid "Reset"
+msgstr "確認"
+
+msgid "Save"
+msgstr "完成"
+
+msgid "This field is required."
+msgstr "此欄為必填"
+
+msgid "Not specified"
+msgstr "無要求"
+
+msgid "Chatroom"
+msgstr "聊天室"
+
+msgid " 's Chatroom"
+msgstr "的聊天室"
+
+msgid "Send"
+msgstr "發送"
+
+msgid "Messages"
+msgstr "收件夾訊息"
+
+msgid "You don't have any messages."
+msgstr "你目前沒有任何訊息。"
+
+msgid "Enter the same password as before, for verification."
+msgstr "請輸入一樣的密碼，以便驗證"
+
+

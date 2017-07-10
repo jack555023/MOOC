@@ -1,0 +1,43 @@
+{% load i18n %}
+
+{% if panel == 'giveout' %}
+<div class="modal fade" id="GiveoutTicketConfirmModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">{% trans 'Ticket Confirmation' %}</h4>
+      </div>
+      <div class="modal-body">
+        <p>{% trans 'Are you sure you want to release this giveout ticket ?' %}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">{% trans 'Cancel' %}</button>
+        <button type="submit" name="giveout-ticket-submit" class="btn btn-primary">{% trans 'Confirm' %}</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+{% elif panel == 'exchange' %}
+<div class="modal fade" id="ExchangeTicketConfirmModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">{% trans 'Ticket Confirmation' %}</h4>
+      </div>
+      <div class="modal-body">
+        <p>{% trans 'Are you sure you want to release this exchange ticket ?' %}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">{% trans 'Cancel' %}</button>
+        <button type="submit" name="exchange-ticket-submit" class="btn btn-primary">{% trans 'Confirm' %}</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+{% endif %}

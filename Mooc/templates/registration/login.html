@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}{% trans 'Log In' %} | NTU Moocs {% endblock %}
+
+{% block body-class %}user{% endblock %}
+
+{% block body %}
+<div class="container">
+  <div class="field-box col-sm-6 col-sm-offset-3">
+    <div class="row">
+      <h2 class="text-center">{% trans 'Log In !' %}</h2>
+    </div>
+    <div class="row">
+      <div class="col-sm-offset-1 col-sm-10">   
+        <form method="post">
+            {% csrf_token %}
+            {% crispy  form %}
+        </form>
+        {% for e in errors %}
+            <p>   {{ e }}    </p>
+              {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

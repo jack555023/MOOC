@@ -1,0 +1,36 @@
+.container-fluid{
+	padding: 10px 50px;
+	background-color: $main-black;
+	.glyphicon{
+		font-size: 20px;
+	}
+	.navbar-brand, .navbar-nav > li > a{
+		color: $light-yellow;
+
+		&:hover{
+			color: $main-yellow;
+		}
+	}
+	.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+		background-color: $main-black;
+		color: $main-yellow;
+	}
+	.navbar-nav > li > .dropdown-menu{
+		border-top-right-radius: 4px;
+    	border-top-left-radius: 4px;
+    	box-shadow: none;
+	}
+	.dropdown-menu > li > a:hover{
+		background-color: $light-yellow;
+	} 
+	.dropdown-menu > li > a:focus{
+		background-color: $main-yellow;
+	}
+}
+.LangDropdown{
+	.dropdown-menu > .active > a,
+	.dropdown-menu > .active > a:focus{
+		color: $main-black;
+		background-color: $light-yellow;
+	}
+}

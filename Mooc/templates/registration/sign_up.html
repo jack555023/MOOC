@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}{% trans 'Sign Up' %} | NTU Moocs  {% endblock %}
+
+{% block body-class %}user{% endblock %}
+
+{% block body %}
+<div class="container">
+	<div class="field-box col-sm-6 col-sm-offset-3">
+		<div class="row">
+			<h2 class="text-center">{% trans 'Sign Up Now !' %}</h2>
+		</div>
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-10">		
+				<form method="post">
+				    {% csrf_token %}
+				    {% crispy form %}
+				   <!--  <button type="submit" name="submit" value="Sign Up" id="submit" class="btn btn-primary text-center col-sm-12 User-btn">{% trans 'Sign Up' %}</button> -->
+				    {% for e in errors %}
+				    <p style = "text-align: center">  <b> {{ e }} </b>    </p>
+        			{% endfor %}
+				    
+				    <p class="text-center">
+					    <span class="form-tip">{% trans '註冊後會發送驗證碼至您的臺大信箱 請收信後驗證並啟用您的帳號' %}</span>
+				    </p>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
